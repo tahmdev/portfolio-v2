@@ -1,8 +1,9 @@
 :root {
   --bg-100: rgb(27, 27, 27);
   --bg-200: rgb(32, 32, 32);
-  --bg-300: rgb(44, 44, 44);
+  --bg-300: rgb(46, 46, 46);
   --text-color: white;
+  --primary-color-50: rgb(165, 79, 119);
   --primary-color-100: rgb(184, 88, 133);
   --primary-color-200: rgb(194, 98, 143);
   --primary-color-300: rgb(204, 108, 153);
@@ -25,10 +26,23 @@ body,
   display: flex;
   flex-direction: column;
 }
+a {
+  text-decoration: none;
+  color: var(--primary-color-300);
+  margin-top: 2px;
+  padding: 0.7rem 0.3rem;
+}
 
 /*Utility classes*/
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
 .split {
   display: flex;
+  flex-direction: column;
 }
 .split > * {
   flex-basis: 100%;
@@ -36,6 +50,17 @@ body,
 }
 .split > * + * {
   margin-left: 1rem;
+  margin-top: 1rem;
+}
+@media (min-width: 1024px) {
+  .split > * + * {
+    margin-left: 1rem;
+    margin-top: 0;
+  }
+  .split {
+    flex-direction: row;
+  }
+}
 }
 
 /*Nav*/
@@ -54,12 +79,18 @@ nav {
 nav > * {
   margin: 0 0.7rem;
 }
-nav a {
-  text-decoration: none;
-  color: var(--primary-color-300);
-  margin-top: 2px;
-  padding: 0.7rem 0.3rem;
-}
 nav .active {
   border-bottom: 2px solid var(--primary-color-100);
 }
+/*Projects*/
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.4rem;
+}
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  }
+}
+
