@@ -104,6 +104,10 @@ nav > * {
 nav .active {
   border-bottom: 2px solid var(--primary-color-100);
 }
+nav a:hover {
+  background-color: var(--bg-300);
+}
+
 /*Projects*/
 .project-grid {
   display: grid;
