@@ -1,28 +1,37 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+interface NavLink {
+  path: string;
+  name: string;
+}
 interface Props {}
 export const Navbar: React.FC<Props> = () => {
+  const navLinks: NavLink[] = [
+    {
+      path: "/",
+      name: "About me",
+    },
+    {
+      path: "/projects",
+      name: "Projects",
+    },
+    {
+      path: "/contact",
+      name: "Contact",
+    },
+  ];
   return (
     <nav>
-      <NavLink
-        to={"/"}
-        className={({ isActive }) => (isActive ? "active" : "")}
-      >
-        About me
-      </NavLink>
-      <NavLink
-        to={"/Projects"}
-        className={({ isActive }) => (isActive ? "active" : "aaa")}
-      >
-        Projects
-      </NavLink>
-      <NavLink
-        to={"/Contact"}
-        className={({ isActive }) => (isActive ? "active" : "")}
-      >
-        Contact
-      </NavLink>
+      {navLinks.map((i) => (
+        <NavLink
+          key={i.path}
+          to={i.path}
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          {i.name}
+        </NavLink>
+      ))}
     </nav>
   );
 };
