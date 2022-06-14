@@ -8,7 +8,7 @@ export const ProjectCard: React.FC<Props> = ({ data }) => {
   return (
     <div className="project-card-wrapper">
       <h2>{data.title}</h2>
-      <img src={data.img[0]} />
+      <img src={data.img[0].img} alt={data.img[0].alt} />
       <p>
         {data.text.summary}
         <Link to={`/projects/${data.links.more}`}> Read more! </Link>

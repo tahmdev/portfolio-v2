@@ -6,7 +6,7 @@ export interface Project {
     technicalDetails: string;
     test: string;
   };
-  img: string[];
+  img: { img: string; alt: string }[];
   links: {
     demo: string;
     code: string;
@@ -25,7 +25,7 @@ export const projectData: Project[] = [
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, quae?",
       test: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate doloribus laborum porro perferendis quasi labore.",
     },
-    img: ["https://i.imgur.com/TfdtHKf.png"],
+    img: [{ img: "https://i.imgur.com/TfdtHKf.png", alt: "alt" }],
     links: {
       demo: "https://github.com/tahmdev",
       code: "https://github.com/tahmdev",
@@ -43,7 +43,7 @@ export const projectData: Project[] = [
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, quae?",
       test: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate doloribus laborum porro perferendis quasi labore.",
     },
-    img: ["https://i.imgur.com/TfdtHKf.png"],
+    img: [{ img: "https://i.imgur.com/TfdtHKf.png", alt: "alt" }],
     links: {
       demo: "https://github.com/tahmdev",
       code: "https://github.com/tahmdev",
@@ -61,7 +61,7 @@ export const projectData: Project[] = [
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, quae?",
       test: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate doloribus laborum porro perferendis quasi labore.",
     },
-    img: ["https://i.imgur.com/TfdtHKf.png"],
+    img: [{ img: "https://i.imgur.com/TfdtHKf.png", alt: "alt" }],
     links: {
       demo: "https://github.com/tahmdev",
       code: "https://github.com/tahmdev",
@@ -79,7 +79,7 @@ export const projectData: Project[] = [
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, quae?",
       test: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate doloribus laborum porro perferendis quasi labore.",
     },
-    img: ["https://i.imgur.com/TfdtHKf.png"],
+    img: [{ img: "https://i.imgur.com/TfdtHKf.png", alt: "alt" }],
     links: {
       demo: "https://github.com/tahmdev",
       code: "https://github.com/tahmdev",
@@ -97,7 +97,7 @@ export const projectData: Project[] = [
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, quae?",
       test: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate doloribus laborum porro perferendis quasi labore.",
     },
-    img: ["https://i.imgur.com/TfdtHKf.png"],
+    img: [{ img: "https://i.imgur.com/TfdtHKf.png", alt: "alt" }],
     links: {
       demo: "https://github.com/tahmdev",
       code: "https://github.com/tahmdev",
