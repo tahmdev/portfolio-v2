@@ -21,7 +21,7 @@ export const Carousel: React.FC<Props> = ({ data }) => {
   const handleDot = (idx: number) => {
     if (carouselRef.current) {
       const width = carouselRef.current.clientWidth;
-      carouselRef.current.scrollTo({ left: width * idx, behavior: "smooth" });
+      carouselRef.current.scrollTo({ left: width * idx });
     }
   };
 
@@ -31,7 +31,6 @@ export const Carousel: React.FC<Props> = ({ data }) => {
       const width = carouselRef.current.clientWidth;
       carouselRef.current.scrollTo({
         left: currentPos + width,
-        behavior: "smooth",
       });
     }
   };
@@ -42,7 +41,6 @@ export const Carousel: React.FC<Props> = ({ data }) => {
       const width = carouselRef.current.clientWidth;
       carouselRef.current.scrollTo({
         left: currentPos - width,
-        behavior: "smooth",
       });
     }
   };
