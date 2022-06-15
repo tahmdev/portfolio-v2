@@ -2,11 +2,13 @@
   --bg-100: rgb(27, 27, 27);
   --bg-200: rgb(32, 32, 32);
   --bg-300: rgb(46, 46, 46);
+  --bg-400: rgb(49, 49, 49);
   --text-color: white;
   --primary-color-50: rgb(165, 79, 119);
   --primary-color-100: rgb(184, 88, 133);
   --primary-color-200: rgb(194, 98, 143);
   --primary-color-300: rgb(204, 108, 153);
+  --primary-color-400: rgb(131, 64, 93);
 }
 html,
 body,
@@ -103,6 +105,14 @@ button:hover {
   background-color: transparent;
   border: none;
   outline: none;
+}
+.primary-btn:disabled {
+  background-color: var(--primary-color-400);
+  border: 2px solid var(--primary-color-400);
+}
+.primary-btn:disabled:hover {
+  cursor: not-allowed;
+  transform: none;
 }
 
 /*Nav*/
