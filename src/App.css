@@ -138,7 +138,36 @@ nav a:hover {
   background-color: var(--bg-300);
 }
 
+/*About*/
+.about-me-wrapper h1 {
+  text-align: center;
+}
+.skill-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill-gallery > * {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.skill-gallery > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.devicon {
+  font-size: 4rem;
+}
+@media (min-width: 1024px) {
+  .devicon {
+    font-size: 5rem;
+  }
+}
+
 /*Projects*/
+.project-wrapper h1 {
+  text-align: center;
+}
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -261,7 +290,6 @@ nav a:hover {
   opacity: 0;
   pointer-events: none;
 }
-/*Text input*/
 
 /*Contact*/
 .contact-wrapper h1 {
