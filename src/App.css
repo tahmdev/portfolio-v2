@@ -170,7 +170,7 @@ nav a:hover {
 }
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 1.4rem;
 }
 @media (min-width: 768px) {
@@ -181,6 +181,8 @@ nav a:hover {
 
 /*Project card*/
 .project-card-wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: var(--bg-300);
   border-radius: 5px;
   box-shadow: 3px 3px 12px 4px rgba(0, 0, 0, 0.322);
@@ -201,7 +203,8 @@ nav a:hover {
 }
 .project-card-links {
   display: flex;
-  margin: 1.5rem 0;
+  justify-self: end;
+  margin-top: auto !important;
 }
 .project-card-links > * {
   flex: 1 1 100%;
@@ -219,6 +222,9 @@ nav a:hover {
 }
 .project-page-text-info {
   order: 2;
+}
+.project-page-text-info * {
+  white-space: pre-line;
 }
 .project-page-wrapper .carousel {
   max-height: 500px !important;
