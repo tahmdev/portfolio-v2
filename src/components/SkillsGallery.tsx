@@ -10,11 +10,12 @@ export const SkillsGallery: React.FC<Props> = () => {
     "typescript",
     "jest",
     "mysql",
+    "git",
   ];
   return (
     <div className="skill-gallery">
       {skills.map((i) => (
-        <div className="flex-column">
+        <div className="flex-column" key={i}>
           <i className={`devicon-${i}-plain colored devicon`}></i>
           <span>{i}</span>
         </div>
