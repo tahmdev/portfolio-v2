@@ -9,9 +9,6 @@ import { Contact } from "./routes/contact";
 import { projectData } from "./data/ProjectData";
 import { ProjectPage } from "./routes/projectPage";
 
-// TODO
-// Projectcard set interface
-
 function App() {
   return (
     <div className="App">
