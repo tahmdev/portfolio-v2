@@ -12,8 +12,12 @@ export const ProjectPage: React.FC<Project> = ({ img, title, text, links }) => {
           <p> {text.detailed} </p>
           <h2> Technical details</h2>
           <p> {text.technicalDetails} </p>
-          <h2> Try it out </h2>
-          <p> {text.test} </p>
+          {text.test && (
+            <>
+              <h2> Try it out </h2>
+              <p> {text.test} </p>
+            </>
+          )}
           <div className="project-card-links">
             <a className="primary-btn" href={links.demo}>
               Demo
