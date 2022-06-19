@@ -165,7 +165,7 @@ export const projectData: Project[] = [
       },
     ],
     links: {
-      demo: "https://tahmdev.github.io/portfolio-v2/",
+      demo: "https://tomschuelke.dev/",
       code: "https://github.com/tahmdev/portfolio-v2",
       more: "Portfolio-V2",
     },
