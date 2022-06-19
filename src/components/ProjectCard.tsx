@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Project } from "../data/ProjectData";
 
 interface Props {
-  data: any;
+  data: Project;
 }
 export const ProjectCard: React.FC<Props> = ({ data }) => {
   return (
@@ -11,7 +12,7 @@ export const ProjectCard: React.FC<Props> = ({ data }) => {
       <img src={data.img[0].img} alt={data.img[0].alt} />
       <p>
         {data.text.summary}
-        <Link to={`/projects/${data.links.more}`}> Read more! </Link>
+        <Link to={`/projects/${data.links.more}`}> Read more </Link>
       </p>
       <div className="project-card-links">
         <a className="primary-btn" href={data.links.demo}>
