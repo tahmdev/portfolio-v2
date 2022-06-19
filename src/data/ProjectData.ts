@@ -20,7 +20,7 @@ export const projectData: Project[] = [
       summary:
         "A Tinder-esque application that allows Twitch livestreamers to easily find fellow livestreamers to collaborate with.",
       detailed:
-        "Networking and collaborating with other livestreamers is one of the most efficient ways to grow your audience, but finding a like-minded co-streamer can often be a slow and stressful process. \nTwitch Matchmaker attempts takes a Tinder-esque approach to solving this issue by allowing you to easily find and get in touch with your ideal co-streamer.",
+        "Networking and collaborating with other livestreamers is one of the most efficient ways to grow your audience, but finding a like-minded co-streamer can often be a slow and stressful process. \nTwitch Matchmaker attempts to take a Tinder-esque approach to solving this issue by allowing you to easily find and get in touch with your ideal co-streamer.",
       technicalDetails:
         "Built using React and Express, connected to a Mysql database. Websockets allow for realtime chatting and notifications.",
       test: "I have added some dummy users for testing purposes, do keep in mind that adding a lot of required tags may very well cause you to not find any matches. \nTesting requires a free Twitch.tv account.\nIt may take 30 seconds for the server to wake up when loading the page for the first time.",
@@ -55,10 +55,10 @@ export const projectData: Project[] = [
       summary:
         "A japanese dictionary with a focus on making lookups as quick and easy as possible.",
       detailed:
-        "Studying a language means doing a lot of reading, and doing a lot of reading in an unfamiliar language will inevitably lead to a lot of dictionary lookups, and yet a lot of dictionaries seem to put very little effort into letting their users gete back to what they were doing as soon as possible. \nThis is where Insta Jisho comes in: automatic lookups, replacing pagination with a scrollable result list, using Google's handwriting recognition, allowing one handed navigation.",
+        "Studying a language means doing a lot of reading, and doing a lot of reading in an unfamiliar language will inevitably lead to a lot of dictionary lookups, and yet a lot of dictionaries seem to put very little effort into letting their users get back to what they were doing as soon as possible. \nThis is where Insta Jisho comes in: automatic lookups, replacing pagination with a scrollable result list, using Google's handwriting recognition, allowing one-handed navigation.",
       technicalDetails:
         "Built using React and Express. Handwriting recognition by Google.",
-      test: "Here are a few words to look up: 辞書、固唾、飲食.\nRadical lookup allows you to search for Kanji by their building blocks.\nGoogle's handwriting recognition is as close to mindreading as we have gotten, it will find what you are looking for even if you write it in a single stroke with your eyes closed. \nIt may take 30 seconds for the server to wake up when loading the page for the first time.",
+      test: "Here are a few words to look up: 辞書、固唾、飲食.\nRadical lookup allows you to search for Kanji by their building blocks.\nGoogle's handwriting recognition is as close to mind reading as we have gotten, it will find what you are looking for even if you write it in a single stroke with your eyes closed. \nIt may take 30 seconds for the server to wake up when loading the page for the first time.",
     },
     img: [
       {
@@ -87,9 +87,9 @@ export const projectData: Project[] = [
       summary:
         "A fully responsive and accessible copy of a popular electronics retailer's landing page.",
       detailed:
-        "I primarily intended for this to be CSS practice but I also ended up learning a lot about accessbility, responsiveness, and code reusability.\nI ended up spending a lot of time having to go back and fix CSS I wrote earlier which caused me to restructure my workflow to focus on building functionality first and style afterwards, instead of doing them simultaneously.\nI also learned how to use a screen reader in order to make the site as accessible as I could.",
+        "I primarily intended for this to be CSS practice, but I also ended up learning a lot about accessibility, responsiveness, and code reusability.\nI ended up spending a lot of time having to go back and fix CSS I wrote earlier which caused me to restructure my workflow to focus on building functionality first and style afterwards, instead of doing them simultaneously.\nI also learned how to use a screen reader in order to make the site as accessible as I could.",
       technicalDetails: "Built entirely in React and vanilla CSS3.",
-      test: "I have not added any other routes, all the links lead back to the site itself.",
+      test: "I have not added any other routes. All the links lead back to the site itself.",
     },
     img: [
       {
@@ -116,7 +116,7 @@ export const projectData: Project[] = [
     text: {
       summary: "An app to play Shiritori with friends, but with a twist.",
       detailed:
-        "Shiritori is a popular japanese word game where players try to chain together words, each starting with the last sound of the previous word. Kanjitori puts a little spin on by making players chain the words based on Kanji instead. \nThere are multiple modes including classic Shiritori.",
+        "Shiritori is a popular japanese word game where players try to chain together words, each starting with the last sound of the previous word. Kanjitori puts a little spin on it by making players chain the words based on Kanji instead. \nThere are multiple modes including classic Shiritori.",
       technicalDetails: "Built in React and Express.",
       test: 'Here are some word chains to try out: \n"Type しりとり": りかい、いみ、みらい、いく、くたい\n"Type 漢字取": 字面、面識、識別、別人、人生、生気\nIt may take 30 seconds for the server to wake up when loading the page for the first time.',
     },
@@ -146,7 +146,7 @@ export const projectData: Project[] = [
       summary:
         "The site you are currently on, and the second portfolio I built.",
       detailed:
-        "I decided to rebuild my portfolio because I was no longer content with the design. The scalability had also become an issue as I had more projects I wanted to display than my old portfolio allowed to.\nI spent a day looking at other portfolios and taking notes on their designs to come up with this one, and I'm pretty happy with how it turned out. ",
+        "I decided to rebuild my portfolio because I was no longer content with the design. Scalability had also become an issue as I had more projects I wanted to display than my old portfolio allowed me to.\nI spent a day looking at other portfolios and taking notes on their designs to come up with this one, and I'm pretty happy with how it turned out. ",
       technicalDetails: "Built using React.",
       test: "",
     },
