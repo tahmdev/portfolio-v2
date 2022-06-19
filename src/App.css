@@ -142,6 +142,9 @@ nav a:hover {
 .about-me-wrapper h1 {
   text-align: center;
 }
+.about-me-wrapper p {
+  white-space: pre-line;
+}
 .skill-gallery {
   display: flex;
   flex-wrap: wrap;
