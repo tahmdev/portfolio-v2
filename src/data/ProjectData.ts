@@ -82,6 +82,29 @@ export const projectData: Project[] = [
     },
   },
   {
+    title: "Thesaurus Chatbot",
+    text: {
+      summary:
+        "Possibly the most eloquent chatbot, also possibly the most useless one.",
+      detailed:
+        "A quick little project I built to tide over part of the heatwave. All words get replaced with the longest available synonym before the response is sent, resulting in some nonsencial but fairly entertaining responses.\n There's also some fun to be had trying to reverse engineer the responses.",
+      technicalDetails:
+        "Built using React connected to a small Express backend. The chat AI is provided by Brainshop.",
+      test: "",
+    },
+    img: [
+      {
+        img: "../images/saurus-bot.png",
+        alt: "Conversation with Thesaurus bot",
+      },
+    ],
+    links: {
+      demo: "https://rad-manatee-8121c5.netlify.app/",
+      code: "https://github.com/tahmdev/thesaurus-bot",
+      more: "Thesaurus-bot",
+    },
+  },
+  {
     title: "E-commerce Homepage",
     text: {
       summary:
